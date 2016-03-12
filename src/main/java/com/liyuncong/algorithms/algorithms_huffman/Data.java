@@ -16,6 +16,7 @@ public class Data {
 	public void setFrequency(int frequency) {
 		this.frequency = frequency;
 	}
+	
 	@Override
 	public String toString() {
 		return "Data [c=" + c + ", frequency=" + frequency + "]";
