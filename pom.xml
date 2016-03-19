@@ -21,5 +21,15 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    	<groupId>com.liyuncong.datastructure</groupId>
+    	<artifactId>datastructure-common</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.liyuncong.application</groupId>
+    	<artifactId>common-tools</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 </project>

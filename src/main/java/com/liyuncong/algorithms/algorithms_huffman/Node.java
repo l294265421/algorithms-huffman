@@ -1,6 +1,6 @@
 package com.liyuncong.algorithms.algorithms_huffman;
 
-public class Node {
+public class Node implements Comparable<Node>{
 	private Node leftChild = null;
 	private Data data = null;
 	private Node rightChild = null;
@@ -27,6 +27,10 @@ public class Node {
 	public String toString() {
 		return "Node [leftChild=" + leftChild + ", data=" + data
 				+ ", rightChild=" + rightChild + "]";
+	}
+	@Override
+	public int compareTo(Node o) {
+		return this.data.compareTo(o.getData());
 	}
 	
 }
