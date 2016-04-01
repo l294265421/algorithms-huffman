@@ -1,5 +1,10 @@
 package com.liyuncong.algorithms.algorithms_huffman;
 
+/**
+ * Data用于存储一个字符及其出现的次数
+ * @author yuncong
+ *
+ */
 public class Data implements Comparable<Data>{
 	private char c = 0;
 	private int frequency = 0;

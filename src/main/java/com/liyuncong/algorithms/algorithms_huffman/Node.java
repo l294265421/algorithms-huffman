@@ -1,5 +1,10 @@
 package com.liyuncong.algorithms.algorithms_huffman;
 
+/**
+ * Node是哈夫曼树中的一个节点
+ * @author yuncong
+ *
+ */
 public class Node implements Comparable<Node>{
 	private Node leftChild = null;
 	private Data data = null;
