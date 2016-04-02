@@ -1,7 +1,7 @@
 package com.liyuncong.algorithms.algorithms_huffman;
 
 /**
- * Node是哈夫曼树中的一个节点
+ * 哈夫曼树的节点
  * @author yuncong
  *
  */

@@ -6,7 +6,9 @@ package com.liyuncong.algorithms.algorithms_huffman;
  *
  */
 public class Data implements Comparable<Data>{
+	// 字符
 	private char c = 0;
+	// 字符出现的次数
 	private int frequency = 0;
 	
 	public char getC() {

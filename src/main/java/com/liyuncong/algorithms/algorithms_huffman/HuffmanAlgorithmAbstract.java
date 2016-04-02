@@ -17,6 +17,11 @@ public abstract class HuffmanAlgorithmAbstract implements HuffmanAlgorithm {
 		return result;
 	}
 	
+	/**
+	 * 把一个字符串转化为节点列表
+	 * @param letters
+	 * @return
+	 */
 	private ArrayList<Node> toList(String letters) {
 		ArrayList<Node> letterList = new ArrayList<Node>();
 		Map<Character, Integer> ci = new HashMap<Character, Integer>();
@@ -44,7 +49,10 @@ public abstract class HuffmanAlgorithmAbstract implements HuffmanAlgorithm {
 	protected abstract Node createTree(ArrayList<Node> letterList);
 	
 	/**
-	 * 得到字符串最终编码
+	 * 编码字符串。
+	 * @param letterCode 字符/编码对集合。
+	 * @param letters 指定的需要编码的字符串。
+	 * @return 编码结果
 	 */
 	private EncodeResult encode(Map<Character, String> letterCode, String letters) {
 		StringBuilder encode = new StringBuilder();
@@ -75,11 +83,11 @@ public abstract class HuffmanAlgorithmAbstract implements HuffmanAlgorithm {
 	}
 
 	/**
-	 * 先序遍历哈夫曼树,获得所有字符编码对
+	 * 先序遍历哈夫曼树,获得所有字符编码对。
 	 * 
-	 * @param rooNode
-	 * @param suffix
-	 * @param letterCode
+	 * @param rooNode 哈夫曼树根结点
+	 * @param suffix 编码前缀，也就是编码这个字符时，之前路径上的所有编码
+	 * @param letterCode 用于保存字符编码结果
 	 */
 	private void getLetterCode(Node rooNode, String suffix,
 			Map<Character, String> letterCode) {
