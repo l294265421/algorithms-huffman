@@ -17,7 +17,7 @@ public class HuffmanAlgorithmImpl1 extends HuffmanAlgorithmAbstract {
 	 */
 	@Override
 	protected Node createTree(ArrayList<Node> letterList) {
-		sort(letterList);
+		init(letterList);
 		while (letterList.size() != 1) {
 			int size = letterList.size();
 			// 小的节点放在右边（眼睛看到的左边）
@@ -40,11 +40,10 @@ public class HuffmanAlgorithmImpl1 extends HuffmanAlgorithmAbstract {
 	}
 	
 	/**
-	 * 初始化 对输入的字符串建立哈夫曼树节点列表，并且，列表中节点是有序的
+	 * 初始化 让节点列表有序
 	 */
-	private ArrayList<Node> init(ArrayList<Node> letterList) {
+	private void init(ArrayList<Node> letterList) {
 		sort(letterList);
-		return letterList;
 	}
 
 	/**
